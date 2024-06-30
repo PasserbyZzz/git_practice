@@ -31,6 +31,10 @@
 
 12. del .git 删除目录.git，即删除整个仓库
 
+13. git remote add origin <远程仓库的HTTPS> 建立本地仓库和GitHub远程仓库的联系
+
+14. git push -u origin master 将本地仓库的代码推送到GitHub远程仓库，第一次推送需要加-u参数，后续推送不需要
+
 git branch <分支名>创建分支
 
 git merge <分支名>将该分支合并到当前分支里
