@@ -1,0 +1,37 @@
+1. git config --global init.defaultBranch <主分支名> 设置每个项目中的主分支的默认名称
+
+2. 创建.gitignore文件，添加目录名，则Git会忽略该目录下的所有文件
+
+3. git init 初始化一个Git仓库（会生成.git目录储存Git用来管理仓库的文件）
+
+4. git status 检查项目状态
+
+5. git add . 将项目中未被跟踪的所有文件加入仓库（必须先入库，才能提交！）
+    git add <文件名> 将指定文件加入库中
+
+6. git commit 创建一个新的提交记录（项目的快照）
+   标志-m可让Git将接下来的消息记录到项目的历史记录中
+   标志-a可让Git将仓库中所有修改了的文件都加入当前提交，即跳过add
+
+7. git log 查看提交历史
+    git log --pretty=oneline 打印提交历史记录的简单版本
+
+8. git restore . 放弃最后一次提交对所有文件所做的所有修改，
+			从而将项目恢复到最后一次提交状态
+    git restore <filename> 放弃最后一次提交后对指定文件所做的所有修改
+
+9. git checkout <该提交的引用ID的前6个字符> 检出提交历史中的任何提交
+    检出后，既可以返回最后一次提交，也可以放弃最近所做的工作并选择以前的提交
+    git checkout <分支名> 切换到分支
+
+10. git switch - 撤销上一个操作，回到分支main
+
+11. git reset --hard <要永久恢复到的提交的引用ID的前6个字符> （前提：位于分支main上）
+
+12. del .git 删除目录.git，即删除整个仓库
+
+git branch <分支名>创建分支
+
+git merge <分支名>将该分支合并到当前分支里
+
+git rebase <分支名>把该分支里的工作复制拷贝，并移到当前分支上
