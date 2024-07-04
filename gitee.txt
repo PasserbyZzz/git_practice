@@ -40,3 +40,8 @@ git branch <分支名>创建分支
 git merge <分支名>将该分支合并到当前分支里
 
 git rebase <分支名>把该分支里的工作复制拷贝，并移到当前分支上
+
+参考网站：
+https://learngitbranching.js.org/?locale=zh_CN
+https://rogerdudler.github.io/git-guide/index.zh.html
+https://mp.weixin.qq.com/s/Bf7uVhGiu47uOELjmC5uXQ
